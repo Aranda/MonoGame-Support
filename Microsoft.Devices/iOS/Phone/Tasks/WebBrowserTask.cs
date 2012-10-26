@@ -1,8 +1,10 @@
+using MonoTouch.UIKit;
+using MonoTouch.Foundation;
 
 namespace Microsoft.Phone.Tasks
 {
     /// <summary>
-    /// Android implementation of the WebBrowserTask
+    /// iOS implementation of the WebBrowserTask
     /// </summary>
     public sealed class WebBrowserTask
     {
@@ -11,7 +13,7 @@ namespace Microsoft.Phone.Tasks
 
         public void Show()
         {
-
+            UIApplication.SharedApplication.OpenUrl(new NSUrl(Uri.OriginalString));
         }
     }
 }
