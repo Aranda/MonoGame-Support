@@ -31,12 +31,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Devices\VibrateController.cs" />
+    <Compile Include="Phone\Tasks\ContentIdHelper.cs" />
     <Compile Include="Phone\Tasks\MarketplaceContentType.cs" />
     <Compile Include="Phone\Tasks\MarketplaceDetailTask.cs" />
     <Compile Include="Phone\Tasks\MarketplaceReviewTask.cs" />
