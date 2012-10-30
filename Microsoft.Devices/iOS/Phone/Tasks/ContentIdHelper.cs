@@ -22,7 +22,9 @@ namespace Microsoft.Phone.Tasks
                 // Ampersand gets converted to "and"!!
                 if (c == '&')
                     output.Append("and");
-                else if (char.IsLetterOrDigit(c))
+
+                // All alphanumeric characters are added
+                if (char.IsLetterOrDigit(c))
                     output.Append(c);
             }
             return output.ToString();
